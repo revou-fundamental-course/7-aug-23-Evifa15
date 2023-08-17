@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator matematika</title>
+    <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <br><h1 style= " font-family: monaco;">KALKULATOR MATEMATIKA </h1><br><a href="#Keliling-Segitiga">Keliling Segitiga</a> || <a href="#Luas-Segitiga">Luas Segitiga</a>  || <a href="#Keliling-JajarGenjang">Keliling Jajar Genjang</a> ||  <a href="#Luas-JajarGenjang">Luas Jajar Genjang</a><br><br>
+    </header>
+    <main>
+        
+        <br><p>Hi Peeps, Welcome to KATIK <br> Web apps sederhana ini akan menghitung nilai luas dan keliling bangun datar <br> Selesaikan persamaan matematika dengan mudah <br> ˗ˏˋ 🤓 ˎˊ˗ <br><br></p>
+        <section class="input-section" id="Keliling-Segitiga">
+            <section class="input-section">
+                <h2 style="background-color: #f67b97; border-radius: 20px; color: aliceblue;"><br>Keliling Segitiga<br><br></h2><br>
+                <img src="Assets/Keliling segitiga.png" alt=""><br><br>
+                <br>Rumus Keliling Segitiga   <br> K = S1 + S2 + S3 <br> S merupakan panjang sisi dari segitiga <br><br>
+                <label for="sisi1-input">Sisi 1 Segitiga</label>
+                <input type="number" id="sisi1-input" placeholder="0"><br>
+               <br><label for="sisi2-input">Sisi 2 Segitiga</label>
+                <input type="number" id="sisi2-input" placeholder="0"><br>
+                <br><label for="sisi3-input">Sisi 3 Segitiga</label>
+                <input type="number" id="sisi3-input" placeholder="0"><br>
+                <br><input type="number" id="keliling-s" placeholder="" disabled="true">
+                <section>
+                <button class= "hasil" type="button" onclick="hitungKelilingSegitiga()">Hitung</button><br>
+                <button class= "reset" type="button" onclick="resetSegitiga()">Reset</button><br>
+                </section>               
+            </section>
+
+            <section class="input-section" id="Luas-Segitiga">
+                <h2 style="background-color: #f67b97; border-radius: 20px; color: aliceblue;"><br>Luas Segitiga<br><br></h2><br>
+                <img src="Assets/Luas Segitiga.png" alt=""><br><br>
+                <br>Rumus Luas Segitiga   <br> L = 1/2 x Alas x Tinggi <br><br><br>
+                <label for="alas=input">Alas Segitiga</label>
+                <input type="number" id="alas-input" placeholder="0"><br>
+               <br><label for="tinggi-input">Tinggi Segitiga</label>
+                <input type="number" id="tinggi-input" placeholder="0"><br>
+                <br><input type="number" id="luas-s" placeholder="" disabled="true">
+            </section>
+            <section>
+                <button class= "hasil" type="button" onclick="hitungLuasSegitiga()">Hitung</button><br>
+                <button class= "reset" type="button" onclick="resetSegitiga()">Reset</button><br>
+                </section>   
+            <h2 style="background-color: #f67b97; border-radius: 20px; color: aliceblue;" id="Keliling-JajarGenjang"><br>Keliling Jajar Genjang<br><br></h2><br>
+            <img src="Assets/JajarGenjang.png" alt=""><br><br>
+            <br>Rumus Keliling Jajar Genjang   <br> K = 2 x ( sisi1 + sisi2 )  <br> a = Sisi 1 <br> BC = Sisi 2<br><br><br><br>
+            <label for="sisi1-input">Sisi 1 Jajar Genjang</label>
+            <input type="number" id="s1-input" placeholder="0"><br>
+           <br><label for="sisi2-input">Sisi 2 Jajar Genjang</label>
+            <input type="number" id="s2-input" placeholder="0"><br>
+            <br><input type="number" id="keliling-j" placeholder="" disabled="true">
+        </section>
+        <section>
+            <button class= "hasil" type="button" onclick="hitungKelilingJajarGenjang()">Hitung</button><br>
+            <button class= "reset" type="button" onclick="resetjajargenjang()">Reset</button><br>
+            </section>   
+        <section class="input-section" id="Luas-JajarGenjang">
+            <h2 style="background-color: #f67b97; border-radius: 20px; color: aliceblue;"><br>Luas Jajar Genjang<br><br></h2><br>
+            <img src="Assets/JajarGenjang.png" alt=""><br><br>
+            <br>Rumus Luas Jajar Genjang   <br> L = Alas x Tinggi  <br> a = Alas Jajar Genjang <br> t = Tinggi Jajar Genjang<br><br><br><br>
+            <label for="alas-input">Alas Jajar Genjang</label>
+            <input type="number" id="alasj-input" placeholder="0"><br>
+           <br><label for="tinggi-input">Tinggi Jajar Genjang</label>
+            <input type="number" id="tinggij-input" placeholder="0"><br>
+            <br><input type="number" id="luas-j" placeholder="" disabled="true">
+        </section>
+        <section>
+            <button class= "hasil" type="button" onclick="hitungLuasJajarGenjang()">Hitung</button><br>
+            <button class= "reset" type="button" onclick="resetjajargenjang()">Reset</button><br>
+            </section>   
+    </main>
+    <script src="JS/index.js"></script>
+</body>
+</html>
